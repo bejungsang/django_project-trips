@@ -1,0 +1,56 @@
+{% extends 'index.html' %}
+{% block title %}여행 가계부 만들기{% endblock %}
+{% block content %}
+<style>
+    table {
+        border-collapse: collapse;
+        width: 100%;
+    }
+    th, td {
+        border: 1px solid black;
+        padding: 8px; 
+        text-align: left; 
+    }
+    th {
+        background-color: #f2f2f2; 
+    }
+    button {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+</style>
+<table>
+    <tr>
+        <th>일자</th>
+        <th>품목</th>
+        <th>금액</th>
+    </tr>
+    <tr>
+        <td rowspan="3">DAY1</td>
+        <td>점심</td>
+        <td>10000원<button input type="submit" value="">금액 수정</button></td>
+    </tr>
+    <tr>
+        <td>점심</td>
+        <td>10000원<button input type="submit" value="">금액 수정</button></td>
+    </tr>
+    <tr>
+        <td>점심</td>
+        <td>10000원<button input type="submit" value="">금액 수정</button></td>
+    </tr>
+    <tr>
+        <td rowspan="3">DAY2</td>
+        <td>저녁</td>
+        <td>15000원<button input type="submit" value="">금액 수정</button></td>
+    </tr>
+    <tr>
+        <td>저녁</td>
+        <td>15000원<button input type="submit" value="">금액 수정</button></td>
+    </tr>
+    <tr>
+        <td>저녁</td>
+        <td>15000원<button input type="submit" value="">금액 수정</button></td>
+    </tr>
+</table>
+{% endblock %}
