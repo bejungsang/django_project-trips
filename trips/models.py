@@ -31,3 +31,4 @@ class TripDetail(models.Model):
 
     def __str__(self):
         return f'{self.trip} - Day {self.day}: {self.destination.name}'
+

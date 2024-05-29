@@ -17,4 +17,6 @@ def index(request):
     return render(request, 'expense/index.html', content)
 
 def index2(request):
+    
     return render(request, 'expense/index2.html')
+    
